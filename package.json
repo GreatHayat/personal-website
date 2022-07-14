@@ -1,18 +1,18 @@
 {
   "name": "developers-portfolio",
   "description": "A personal static website/portfolio template hosted with GitHub Pages, built to showcase my recent projects.",
-  "homepage": "http://hashirshoaeb.com/home",
+  "homepage": "https://GreatHayat.github.io/personal-website",
   "version": "2.0.0",
   "private": true,
   "author": {
-    "name": "Hashir Shoaib",
-    "email": "hashirshoaeb@gmail.com",
-    "url": "https://github.com/hashirshoaeb"
+    "name": "Khizar Hayat",
+    "email": "greathayat@outlook.com",
+    "url": "https://github.com/GreatHayat"
   },
   "dependencies": {
     "axios": "^0.19.2",
     "bootstrap": "^4.5.2",
-    "gh-pages": "^2.2.0",
+    "gh-pages": "^4.0.0",
     "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
