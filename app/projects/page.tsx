@@ -539,7 +539,7 @@ const ProjectsPage: React.FC = () => {
                       <span>🔒 Private Project</span>
                     </div>
                   ) : project.type === "demo" && !project.url ? (
-                    <div className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-blue-700/50 border border-blue-600 rounded-full font-semibold text-sm text-blue-200 w-full cursor-pointer">
+                    <div className="text-white inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-blue-700/50 border border-blue-600 rounded-full font-semibold text-sm w-full cursor-pointer">
                       <span>🎬 View Demo Details</span>
                     </div>
                   ) : (
@@ -553,7 +553,7 @@ const ProjectsPage: React.FC = () => {
                           // Open modal instead
                         }
                       }}
-                      className={`inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-linear-to-r ${project.gradient} hover:opacity-90 rounded-full font-semibold text-sm transition-all duration-300 hover:scale-105 hover:shadow-xl w-full`}
+                      className={`text-white inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-linear-to-r ${project.gradient} hover:opacity-90 rounded-full font-semibold text-sm transition-all duration-300 hover:scale-105 hover:shadow-xl w-full`}
                     >
                       {project.type === "github"
                         ? "View on GitHub"
@@ -620,7 +620,7 @@ const ProjectsPage: React.FC = () => {
             {/* Close Button */}
             <button
               onClick={closeModal}
-              className="cursor-pointer absolute top-4 right-4 z-10 p-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 rounded-full transition-all duration-300"
+              className="cursor-pointer absolute top-4 right-4 z-10 p-2 bg-black/30 hover:bg-black/40 backdrop-blur-sm border border-white/20 rounded-full transition-all duration-300"
               aria-label="Close modal"
             >
               <X className="w-6 h-6 text-white" />
@@ -772,7 +772,7 @@ const ProjectsPage: React.FC = () => {
                 <Link
                   href={selectedProject.url}
                   target="_blank"
-                  className={`inline-flex items-center justify-center gap-2 px-8 py-4 bg-linear-to-r ${selectedProject.gradient} hover:opacity-90 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl w-full md:w-auto`}
+                  className={`text-white cursor-pointer inline-flex items-center justify-center gap-2 px-8 py-4 bg-linear-to-r ${selectedProject.gradient} hover:opacity-90 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl w-full md:w-auto`}
                 >
                   {selectedProject.type === "github"
                     ? "View on GitHub"
