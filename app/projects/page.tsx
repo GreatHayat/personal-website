@@ -34,8 +34,8 @@ const ProjectsPage: React.FC = () => {
         "MongoDB",
         "Stripe",
       ],
-      gradient: "from-purple-500 to-pink-500",
-      borderColor: "border-purple-500/50",
+      gradient: "from-cyan-500 to-teal-500",
+      borderColor: "border-cyan-500/50",
       url: "https://app.agoravoice.ai",
       type: "live", // 'live', 'github', 'demo', or 'private'
       featured: true,
@@ -94,8 +94,8 @@ const ProjectsPage: React.FC = () => {
         "Facebook Graph API",
         "Digital Ocean",
       ],
-      gradient: "from-orange-500 to-red-500",
-      borderColor: "border-orange-500/50",
+      gradient: "from-teal-500 to-blue-500",
+      borderColor: "border-teal-500/50",
       url: "https://shadowsuite.live",
       type: "live",
       featured: true,
@@ -114,8 +114,8 @@ const ProjectsPage: React.FC = () => {
         "Netlify",
         "Markdown",
       ],
-      gradient: "from-indigo-500 to-purple-500",
-      borderColor: "border-indigo-500/50",
+      gradient: "from-blue-500 to-cyan-500",
+      borderColor: "border-blue-500/50",
       url: "https://resonant-dodol-cf9583.netlify.app/",
       type: "live",
       featured: false,
@@ -175,8 +175,8 @@ const ProjectsPage: React.FC = () => {
         "Netlify",
         "GenerativeAI",
       ],
-      gradient: "from-amber-500 to-orange-500",
-      borderColor: "border-amber-500/50",
+      gradient: "from-blue-500 to-cyan-500",
+      borderColor: "border-blue-500/50",
       url: "https://www.loom.com/share/6f41e1c5b5724758be1be79a902b9a59",
       type: "demo",
       featured: false,
@@ -195,8 +195,8 @@ const ProjectsPage: React.FC = () => {
         "Google Slides",
         "Gmail API",
       ],
-      gradient: "from-rose-500 to-pink-500",
-      borderColor: "border-rose-500/50",
+      gradient: "from-cyan-500 to-teal-500",
+      borderColor: "border-cyan-500/50",
       url: "https://www.loom.com/share/cf9b4874243b422b90c23a0f2e85e60e",
       type: "demo",
       featured: false,
@@ -215,8 +215,8 @@ const ProjectsPage: React.FC = () => {
         "API Integration",
         "Google Sheets",
       ],
-      gradient: "from-violet-500 to-purple-500",
-      borderColor: "border-violet-500/50",
+      gradient: "from-teal-500 to-blue-500",
+      borderColor: "border-teal-500/50",
       url: "https://www.loom.com/share/cf9b4874243b422b90c23a0f2e85e60e",
       type: "demo",
       featured: false,
@@ -236,8 +236,8 @@ const ProjectsPage: React.FC = () => {
         "Google Whisk",
         "Gmail Drive API",
       ],
-      gradient: "from-rose-500 to-pink-500",
-      borderColor: "border-rose-500/50",
+      gradient: "from-cyan-500 to-teal-500",
+      borderColor: "border-cyan-500/50",
       url: "",
       type: "demo",
       featured: false,
@@ -256,8 +256,8 @@ const ProjectsPage: React.FC = () => {
         "API Integration",
         "Qdrant VectorStore",
       ],
-      gradient: "from-violet-500 to-purple-500",
-      borderColor: "border-violet-500/50",
+      gradient: "from-teal-500 to-blue-500",
+      borderColor: "border-teal-500/50",
       url: "",
       type: "demo",
       featured: false,
@@ -286,12 +286,12 @@ const ProjectsPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-950">
       {/* Hero Section */}
-      <section className="relative py-16 lg:py-20 bg-linear-to-br from-slate-950 via-blue-950 to-purple-950 overflow-hidden">
+      <section className="relative py-16 lg:py-20 bg-linear-to-br from-slate-950 via-blue-950 to-slate-950 overflow-hidden">
         {/* Animated background elements */}
         <div className="absolute inset-0">
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/30 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob" />
-          <div className="absolute top-0 right-1/4 w-96 h-96 bg-purple-500/30 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000" />
-          <div className="absolute bottom-0 left-1/3 w-96 h-96 bg-pink-500/30 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000" />
+          <div className="absolute top-0 right-1/4 w-96 h-96 bg-cyan-500/30 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000" />
+          <div className="absolute bottom-0 left-1/3 w-96 h-96 bg-teal-500/30 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000" />
         </div>
 
         {/* Grid pattern overlay */}
@@ -306,7 +306,7 @@ const ProjectsPage: React.FC = () => {
           {/* Page Header */}
           <div className="text-center mb-10">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
-              <span className="bg-linear-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-blue-400 via-cyan-400 to-teal-400 bg-clip-text text-transparent">
                 My Projects
               </span>
             </h1>
@@ -329,16 +329,16 @@ const ProjectsPage: React.FC = () => {
               {
                 number: "40+",
                 label: "Happy Clients",
-                gradient: "from-purple-500 to-pink-500",
-                border: "border-purple-500/50",
-                shadow: "shadow-purple-500/20",
+                gradient: "from-cyan-500 to-teal-500",
+                border: "border-cyan-500/50",
+                shadow: "shadow-cyan-500/20",
               },
               {
                 number: "100%",
                 label: "Success Rate",
-                gradient: "from-pink-500 to-red-500",
-                border: "border-pink-500/50",
-                shadow: "shadow-pink-500/20",
+                gradient: "from-teal-500 to-blue-500",
+                border: "border-teal-500/50",
+                shadow: "shadow-teal-500/20",
               },
               {
                 number: "5+",
@@ -422,7 +422,7 @@ const ProjectsPage: React.FC = () => {
                 onClick={() => setSelectedCategory(category)}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                   selectedCategory === category
-                    ? "bg-linear-to-r from-blue-500 to-purple-500 text-white shadow-lg shadow-blue-500/50"
+                    ? "bg-linear-to-r from-blue-500 to-purple-500 text-white shadow-lg shadow-cyan-500/50"
                     : "bg-white/10 text-gray-300 hover:bg-white/20 hover:text-white border border-white/20 backdrop-blur-sm"
                 }`}
               >
@@ -539,7 +539,7 @@ const ProjectsPage: React.FC = () => {
                       <span>🔒 Private Project</span>
                     </div>
                   ) : project.type === "demo" && !project.url ? (
-                    <div className="text-white inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-blue-700/50 border border-blue-600 rounded-full font-semibold text-sm w-full cursor-pointer">
+                    <div className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-blue-700/50 border border-blue-600 rounded-full font-semibold text-sm text-blue-200 w-full cursor-pointer">
                       <span>🎬 View Demo Details</span>
                     </div>
                   ) : (
@@ -553,7 +553,7 @@ const ProjectsPage: React.FC = () => {
                           // Open modal instead
                         }
                       }}
-                      className={`text-white inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-linear-to-r ${project.gradient} hover:opacity-90 rounded-full font-semibold text-sm transition-all duration-300 hover:scale-105 hover:shadow-xl w-full`}
+                      className={`inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-linear-to-r ${project.gradient} hover:opacity-90 rounded-full font-semibold text-sm transition-all duration-300 hover:scale-105 hover:shadow-xl w-full`}
                     >
                       {project.type === "github"
                         ? "View on GitHub"
@@ -599,7 +599,7 @@ const ProjectsPage: React.FC = () => {
             href="https://cal.com/muhammad-khizar-hayat/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white inline-flex items-center gap-2 px-8 py-4 bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/50"
+            className="text-white inline-flex items-center gap-2 px-8 py-4 bg-linear-to-r from-blue-500 via-cyan-500 to-teal-500 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-cyan-500/50"
           >
             Schedule a Free Call
             <ExternalLink className="w-5 h-5" />
@@ -620,7 +620,7 @@ const ProjectsPage: React.FC = () => {
             {/* Close Button */}
             <button
               onClick={closeModal}
-              className="cursor-pointer absolute top-4 right-4 z-10 p-2 bg-black/30 hover:bg-black/40 backdrop-blur-sm border border-white/20 rounded-full transition-all duration-300"
+              className="cursor-pointer absolute top-4 right-4 z-10 p-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 rounded-full transition-all duration-300"
               aria-label="Close modal"
             >
               <X className="w-6 h-6 text-white" />

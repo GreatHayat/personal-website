@@ -77,7 +77,7 @@ const Testimonials: React.FC = () => {
     <section className="relative py-20 lg:py-28 bg-slate-950" id="testimonials">
       {/* Background decoration */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 right-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 right-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
       </div>
 
@@ -85,7 +85,7 @@ const Testimonials: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            <span className="bg-linear-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-blue-400 via-cyan-400 to-teal-400 bg-clip-text text-transparent">
               What Clients Say
             </span>
           </h2>
@@ -146,7 +146,7 @@ const Testimonials: React.FC = () => {
 
                 {/* Author */}
                 <div className="flex items-center gap-3 pt-4 border-t border-white/10">
-                  <div className="w-10 h-10 bg-linear-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center">
+                  <div className="w-10 h-10 bg-linear-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center">
                     <span className="text-white font-bold text-sm">
                       {testimonial.author.charAt(0)}
                     </span>
@@ -170,7 +170,7 @@ const Testimonials: React.FC = () => {
                 onClick={() => setCurrentIndex(index)}
                 className={`w-2 h-2 rounded-full transition-all duration-300 ${
                   index === currentIndex
-                    ? "w-8 bg-linear-to-r from-blue-400 to-purple-400"
+                    ? "w-8 bg-linear-to-r from-blue-400 to-cyan-400"
                     : "bg-white/20 hover:bg-white/40"
                 }`}
                 aria-label={`Go to testimonial ${index + 1}`}
@@ -185,7 +185,7 @@ const Testimonials: React.FC = () => {
             href="https://www.upwork.com/freelancers/~01e66b9a5da26e47be"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-linear-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-green-500/50"
+            className="text-white inline-flex items-center gap-2 px-6 py-3 bg-linear-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-green-500/50"
           >
             Read All 30+ Reviews on Upwork
             <ExternalLink className="w-4 h-4" />

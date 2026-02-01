@@ -4,48 +4,33 @@ import Image from "next/image";
 import Link from "next/link";
 
 const About: React.FC = () => {
-  //   const skills = [
-  //     "Supabase",
-  //     "NextJS",
-  //     "NodeJS",
-  //     "Stripe",
-  //     "Google Cloud",
-  //     "Digital Ocean",
-  //     "TypeScript",
-  //     "React",
-  //     "PostgreSQL",
-  //     "MongoDB",
-  //     "API Integration",
-  //     "AI Development",
-  //   ];
-
   const highlights = [
     {
       icon: Award,
       title: "5+ Years Experience",
       description:
         "Building production-ready applications for startups and businesses",
-      linear: "from-blue-500 to-cyan-500",
+      gradient: "from-blue-500 to-cyan-500",
     },
     {
       icon: Users,
       title: "Direct Client Collaboration",
       description:
         "Worked with CTOs, Product Managers, and CEOs to deliver results",
-      linear: "from-purple-500 to-pink-500",
+      gradient: "from-cyan-500 to-teal-500",
     },
     {
       icon: Code,
       title: "Technical Excellence",
       description: "Expertise in modern tech stack and best practices",
-      linear: "from-green-500 to-emerald-500",
+      gradient: "from-teal-500 to-blue-500",
     },
     {
       icon: Heart,
       title: "Problem Solver",
       description:
         "Passionate about solving real problems that add business value",
-      linear: "from-orange-500 to-red-500",
+      gradient: "from-green-500 to-emerald-500",
     },
   ];
 
@@ -54,14 +39,14 @@ const About: React.FC = () => {
       {/* Background decoration */}
       <div className="absolute inset-0">
         <div className="absolute top-1/3 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/3 right-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/3 right-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            <span className="bg-linear-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-blue-400 via-cyan-400 to-teal-400 bg-clip-text text-transparent">
               About Me
             </span>
           </h2>
@@ -77,7 +62,7 @@ const About: React.FC = () => {
           <div className="order-2 lg:order-1">
             <div className="relative">
               {/* Photo Placeholder */}
-              <div className="relative aspect-square max-w-md mx-auto bg-linear-to-br from-blue-500/10 to-purple-500/10 rounded-2xl overflow-hidden border border-blue-500/30">
+              <div className="relative aspect-square max-w-md mx-auto bg-linear-to-br from-blue-500/10 to-cyan-500/10 rounded-2xl overflow-hidden border border-cyan-500/30">
                 <Image
                   src="/hayat.webp"
                   alt="Khizar Hayat"
@@ -89,7 +74,7 @@ const About: React.FC = () => {
 
               {/* Decorative elements */}
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-linear-to-br from-blue-500 to-cyan-500 rounded-full opacity-20 blur-2xl" />
-              <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-linear-to-br from-purple-500 to-pink-500 rounded-full opacity-20 blur-2xl" />
+              <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-linear-to-br from-cyan-500 to-teal-500 rounded-full opacity-20 blur-2xl" />
             </div>
           </div>
 
@@ -185,7 +170,7 @@ const About: React.FC = () => {
                 className="p-6 bg-linear-to-br from-white/5 to-white/10 backdrop-blur-sm border border-white/10 rounded-xl hover:border-white/30 transition-all duration-300 hover:scale-105"
               >
                 <div
-                  className={`inline-flex p-3 bg-linear-to-r ${highlight.linear} rounded-lg mb-4`}
+                  className={`inline-flex p-3 bg-linear-to-r ${highlight.gradient} rounded-lg mb-4`}
                 >
                   <Icon className="w-6 h-6 text-white" strokeWidth={2} />
                 </div>
@@ -197,29 +182,6 @@ const About: React.FC = () => {
             );
           })}
         </div>
-
-        {/* Skills Section */}
-        {/* <div className="text-center">
-          <h3 className="text-2xl font-bold text-white mb-6">
-            Core Technologies
-          </h3>
-          <div className="flex flex-wrap justify-center gap-3">
-            {skills.map((skill, index) => (
-              <span
-                key={index}
-                className="px-4 py-2 bg-white/5 border border-white/10 hover:border-white/30 rounded-full text-sm font-medium text-gray-300 transition-all duration-300 hover:scale-105"
-              >
-                {skill === "Supabase" ? (
-                  <span className="font-bold bg-linear-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">
-                    {skill}
-                  </span>
-                ) : (
-                  skill
-                )}
-              </span>
-            ))}
-          </div>
-        </div> */}
       </div>
     </section>
   );

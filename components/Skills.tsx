@@ -7,11 +7,11 @@ const Skills: React.FC = () => {
     {
       icon: Sparkles,
       title: "Generative AI",
-      linear: "from-purple-500 to-pink-500",
-      bglinear: "from-purple-500/10 to-pink-500/10",
-      borderColor: "border-purple-500/50",
-      iconBg: "bg-purple-500/10",
-      iconColor: "text-purple-400",
+      gradient: "from-cyan-500 to-teal-500",
+      bgGradient: "from-cyan-500/10 to-teal-500/10",
+      borderColor: "border-cyan-500/50",
+      iconBg: "bg-cyan-500/10",
+      iconColor: "text-cyan-400",
       skills: [
         "AI Chatbot Development",
         "AI Voice Assistant",
@@ -23,8 +23,8 @@ const Skills: React.FC = () => {
     {
       icon: Code,
       title: "Web Development",
-      linear: "from-blue-500 to-cyan-500",
-      bglinear: "from-blue-500/10 to-cyan-500/10",
+      gradient: "from-blue-500 to-cyan-500",
+      bgGradient: "from-blue-500/10 to-cyan-500/10",
       borderColor: "border-blue-500/50",
       iconBg: "bg-blue-500/10",
       iconColor: "text-blue-400",
@@ -42,8 +42,8 @@ const Skills: React.FC = () => {
     {
       icon: Workflow,
       title: "Workflow Automation & CRMs",
-      linear: "from-green-500 to-emerald-500",
-      bglinear: "from-green-500/10 to-emerald-500/10",
+      gradient: "from-green-500 to-emerald-500",
+      bgGradient: "from-green-500/10 to-emerald-500/10",
       borderColor: "border-green-500/50",
       iconBg: "bg-green-500/10",
       iconColor: "text-green-400",
@@ -52,18 +52,18 @@ const Skills: React.FC = () => {
   ];
 
   return (
-    <section className="relative py-20 lg:py-24 bg-linear-to-b from-slate-950 via-slate-900 to-slate-950">
+    <section className="relative py-16 lg:py-16 bg-linear-to-b from-slate-950 via-slate-900 to-slate-950">
       {/* Background decoration */}
       <div className="absolute inset-0">
         <div className="absolute top-1/3 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/3 left-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/3 left-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            <span className="bg-linear-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-blue-400 via-cyan-400 to-teal-400 bg-clip-text text-transparent">
               Technical Expertise
             </span>
           </h2>
@@ -84,11 +84,11 @@ const Skills: React.FC = () => {
             return (
               <div
                 key={index}
-                className={`group p-8 bg-linear-to-br ${category.bglinear} backdrop-blur-sm border ${category.borderColor} rounded-2xl hover:scale-[1.02] transition-all duration-300 hover:shadow-xl`}
+                className={`group p-8 bg-linear-to-br ${category.bgGradient} backdrop-blur-sm border ${category.borderColor} rounded-2xl hover:scale-[1.02] transition-all duration-300 hover:shadow-xl`}
               >
-                {/* linear overlay on hover */}
+                {/* Gradient overlay on hover */}
                 <div
-                  className={`absolute inset-0 bg-linear-to-br ${category.linear} opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300`}
+                  className={`absolute inset-0 bg-linear-to-br ${category.gradient} opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300`}
                 />
 
                 <div className="relative">
@@ -142,7 +142,7 @@ const Skills: React.FC = () => {
             <Link
               target="_blank"
               href="https://cal.com/muhammad-khizar-hayat/30min"
-              className="text-blue-400 hover:text-blue-300 transition-colors underline"
+              className="text-cyan-400 hover:text-cyan-300 transition-colors underline"
             >
               Let&apos;s discuss how I can help
             </Link>

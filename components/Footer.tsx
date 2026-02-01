@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
           {/* Column 1 - Brand */}
           <div>
             <a href="#" className="inline-block mb-4">
-              <span className="text-2xl font-bold bg-linear-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+              <span className="text-2xl font-bold bg-linear-to-r from-blue-400 via-cyan-400 to-teal-400 bg-clip-text text-transparent">
                 Khizar Hayat
               </span>
             </a>
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
               automation, and lead capture systems.
             </p>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:mkhizarfreelancer@gmail.com"
               className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm"
             >
               <Mail className="w-4 h-4" />

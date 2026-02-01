@@ -1,6 +1,6 @@
 import React from "react";
-import { Rocket, Zap, Phone, Workflow, ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { Rocket, Zap, Phone, Workflow, ArrowRight } from "lucide-react";
 
 const Services: React.FC = () => {
   const services = [
@@ -16,8 +16,8 @@ const Services: React.FC = () => {
         "Database design & API integration",
         "Deployment & hosting setup",
       ],
-      linear: "from-blue-500 to-cyan-500",
-      bglinear: "from-blue-500/10 to-cyan-500/10",
+      gradient: "from-blue-500 to-cyan-500",
+      bgGradient: "from-blue-500/10 to-cyan-500/10",
       borderColor: "border-blue-500/50",
       iconBg: "bg-blue-500/10",
       iconColor: "text-blue-400",
@@ -34,11 +34,11 @@ const Services: React.FC = () => {
         "Automated follow-ups",
         "Real-time notifications",
       ],
-      linear: "from-purple-500 to-pink-500",
-      bglinear: "from-purple-500/10 to-pink-500/10",
-      borderColor: "border-purple-500/50",
-      iconBg: "bg-purple-500/10",
-      iconColor: "text-purple-400",
+      gradient: "from-cyan-500 to-teal-500",
+      bgGradient: "from-cyan-500/10 to-teal-500/10",
+      borderColor: "border-cyan-500/50",
+      iconBg: "bg-cyan-500/10",
+      iconColor: "text-cyan-400",
     },
     {
       icon: Phone,
@@ -52,8 +52,8 @@ const Services: React.FC = () => {
         "Call routing & transfers",
         "Analytics & insights",
       ],
-      linear: "from-green-500 to-emerald-500",
-      bglinear: "from-green-500/10 to-emerald-500/10",
+      gradient: "from-green-500 to-emerald-500",
+      bgGradient: "from-green-500/10 to-emerald-500/10",
       borderColor: "border-green-500/50",
       iconBg: "bg-green-500/10",
       iconColor: "text-green-400",
@@ -70,11 +70,11 @@ const Services: React.FC = () => {
         "Custom workflows",
         "Error handling & monitoring",
       ],
-      linear: "from-orange-500 to-red-500",
-      bglinear: "from-orange-500/10 to-red-500/10",
-      borderColor: "border-orange-500/50",
-      iconBg: "bg-orange-500/10",
-      iconColor: "text-orange-400",
+      gradient: "from-teal-500 to-blue-500",
+      bgGradient: "from-teal-500/10 to-blue-500/10",
+      borderColor: "border-teal-500/50",
+      iconBg: "bg-teal-500/10",
+      iconColor: "text-teal-400",
     },
   ];
 
@@ -87,7 +87,7 @@ const Services: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            <span className="bg-linear-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-blue-400 via-cyan-400 to-teal-400 bg-clip-text text-transparent">
               What I Can Build For You
             </span>
           </h2>
@@ -104,16 +104,16 @@ const Services: React.FC = () => {
             return (
               <div
                 key={index}
-                className={`group relative p-8 bg-linear-to-br ${service.bglinear} backdrop-blur-sm border ${service.borderColor} rounded-2xl hover:scale-[1.02] transition-all duration-300 hover:shadow-2xl hover:shadow-${service.borderColor}/20`}
+                className={`group relative p-8 bg-linear-to-br ${service.bgGradient} backdrop-blur-sm border ${service.borderColor} rounded-2xl hover:scale-[1.02] transition-all duration-300 hover:shadow-2xl hover:shadow-${service.borderColor}/20`}
               >
-                {/* linear overlay on hover */}
+                {/* Gradient overlay on hover */}
                 <div
-                  className={`absolute inset-0 bg-linear-to-br ${service.linear} opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300`}
+                  className={`absolute inset-0 bg-linear-to-br ${service.gradient} opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300`}
                 />
 
                 {/* Corner accent */}
                 <div
-                  className={`absolute top-0 right-0 w-24 h-24 bg-linear-to-br ${service.linear} opacity-10 rounded-bl-full`}
+                  className={`absolute top-0 right-0 w-24 h-24 bg-linear-to-br ${service.gradient} opacity-10 rounded-bl-full`}
                 />
 
                 <div className="relative">
@@ -129,7 +129,7 @@ const Services: React.FC = () => {
                     {service.title}
                   </h3>
                   <p
-                    className={`text-sm font-semibold bg-linear-to-r ${service.linear} bg-clip-text text-transparent mb-4`}
+                    className={`text-sm font-semibold bg-linear-to-r ${service.gradient} bg-clip-text text-transparent mb-4`}
                   >
                     {service.tagline}
                   </p>
@@ -179,7 +179,7 @@ const Services: React.FC = () => {
             href="https://cal.com/muhammad-khizar-hayat/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white inline-flex items-center gap-2 px-8 py-4 bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/50"
+            className="text-white inline-flex items-center gap-2 px-8 py-4 bg-linear-to-r from-blue-500 via-cyan-500 to-teal-500 hover:from-blue-600 hover:via-cyan-600 hover:to-teal-600 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-cyan-500/50"
           >
             Schedule a Free Consultation
             <ArrowRight className="w-5 h-5" />

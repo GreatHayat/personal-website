@@ -1,7 +1,7 @@
 import React from "react";
-import { ExternalLink } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
+import { ExternalLink } from "lucide-react";
 
 const Projects: React.FC = () => {
   const projects = [
@@ -18,8 +18,8 @@ const Projects: React.FC = () => {
         "MongoDB",
         "Stripe",
       ],
-      linear: "from-purple-500 to-pink-500",
-      borderColor: "border-purple-500/50",
+      gradient: "from-cyan-500 to-teal-500",
+      borderColor: "border-cyan-500/50",
       liveUrl: "https://app.agoravoice.ai",
       image: "/agora.webp",
     },
@@ -35,7 +35,7 @@ const Projects: React.FC = () => {
         "TypeScript",
         "TailwindCSS",
       ],
-      linear: "from-blue-500 to-cyan-500",
+      gradient: "from-blue-500 to-cyan-500",
       borderColor: "border-blue-500/50",
       liveUrl: "https://theopenrnd.com",
       image: "/openrnd.webp",
@@ -52,7 +52,7 @@ const Projects: React.FC = () => {
         "Email Template",
         "Mobile Application",
       ],
-      linear: "from-green-500 to-emerald-500",
+      gradient: "from-green-500 to-emerald-500",
       borderColor: "border-green-500/50",
       liveUrl: "https://styleslots.gr/",
       image: "/styleslots.webp",
@@ -69,8 +69,8 @@ const Projects: React.FC = () => {
         "Facebook Graph API",
         "Digital Ocean",
       ],
-      linear: "from-orange-500 to-red-500",
-      borderColor: "border-orange-500/50",
+      gradient: "from-teal-500 to-blue-500",
+      borderColor: "border-teal-500/50",
       liveUrl: "https://shadowsuite.live",
       image: "/shdowsuite.webp",
     },
@@ -85,7 +85,7 @@ const Projects: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            <span className="bg-linear-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-blue-400 via-cyan-400 to-teal-400 bg-clip-text text-transparent">
               Featured Projects
             </span>
           </h2>
@@ -109,7 +109,7 @@ const Projects: React.FC = () => {
                 className={`relative ${index % 2 === 1 ? "lg:col-start-2" : ""}`}
               >
                 <div
-                  className={`relative aspect-video bg-linear-to-br ${project.linear} rounded-2xl overflow-hidden border ${project.borderColor} group-hover:scale-[1.02] transition-all duration-300 shadow-xl group-hover:shadow-2xl`}
+                  className={`relative aspect-video bg-linear-to-br ${project.gradient} rounded-2xl overflow-hidden border ${project.borderColor} group-hover:scale-[1.02] transition-all duration-300 shadow-xl group-hover:shadow-2xl`}
                 >
                   <Image
                     src={project.image}
@@ -149,16 +149,9 @@ const Projects: React.FC = () => {
                     {project.techStack.map((tech, idx) => (
                       <span
                         key={idx}
-                        className={`px-3 py-1 text-xs font-medium bg-linear-to-r ${project.linear} bg-opacity-10 border ${project.borderColor} rounded-full text-white`}
+                        className={`px-3 py-1 text-xs font-medium bg-linear-to-r ${project.gradient} bg-opacity-10 border ${project.borderColor} rounded-full text-white`}
                       >
                         {tech}
-                        {/* {tech === "Supabase" ? (
-                          <span className="font-bold bg-linear-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">
-                            {tech}
-                          </span>
-                        ) : (
-                          tech
-                        )} */}
                       </span>
                     ))}
                   </div>
@@ -169,7 +162,7 @@ const Projects: React.FC = () => {
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`text-white inline-flex items-center gap-2 px-6 py-3 bg-linear-to-r ${project.linear} hover:opacity-90 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl`}
+                  className={`text-white inline-flex items-center gap-2 px-6 py-3 bg-linear-to-r ${project.gradient} hover:opacity-90 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl`}
                 >
                   Visit Live Site
                   <ExternalLink className="w-4 h-4" />
@@ -183,7 +176,7 @@ const Projects: React.FC = () => {
         <div className="text-center mt-20">
           <Link
             href="/projects"
-            className="text-white inline-flex items-center gap-2 px-8 py-4 bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/50"
+            className="text-white inline-flex items-center gap-2 px-8 py-4 bg-linear-to-r from-blue-500 via-cyan-500 to-teal-500 hover:from-blue-600 hover:via-cyan-600 hover:to-teal-600 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-cyan-500/50"
           >
             View All Projects
           </Link>
