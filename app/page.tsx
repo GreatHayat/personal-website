@@ -1,6 +1,5 @@
 import About from "@/components/About";
 import FinalCTA from "@/components/Cta";
-import Footer from "@/components/Footer";
 import HeroSection from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Services from "@/components/Services";
@@ -17,7 +16,6 @@ export default function Home() {
       <Projects />
       <Testimonials />
       <FinalCTA />
-      <Footer />
     </>
   );
 }

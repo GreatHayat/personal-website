@@ -1,5 +1,6 @@
 import React from "react";
 import { Rocket, Zap, Phone, Workflow, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const Services: React.FC = () => {
   const services = [
@@ -174,15 +175,15 @@ const Services: React.FC = () => {
           <p className="text-gray-400 mb-6">
             Not sure which service you need? Let&apos;s discuss your project.
           </p>
-          <a
-            href="https://cal.com/your-link"
+          <Link
+            href="https://cal.com/muhammad-khizar-hayat/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/50"
+            className="text-white inline-flex items-center gap-2 px-8 py-4 bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/50"
           >
             Schedule a Free Consultation
             <ArrowRight className="w-5 h-5" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

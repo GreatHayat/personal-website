@@ -1,5 +1,6 @@
 import React from "react";
-import { Linkedin, Github, Mail, ExternalLink } from "lucide-react";
+import Link from "next/link";
+import { Linkedin, Github, Mail, ExternalLink, Instagram } from "lucide-react";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -13,18 +14,23 @@ const Footer: React.FC = () => {
   const socialLinks = [
     {
       name: "Upwork",
-      href: "https://www.upwork.com/freelancers/your-profile",
+      href: "https://www.upwork.com/freelancers/~01e66b9a5da26e47be",
       icon: ExternalLink,
     },
     {
       name: "LinkedIn",
-      href: "https://www.linkedin.com/in/your-profile",
+      href: "https://www.linkedin.com/in/muhammad-khizar-hayat/",
       icon: Linkedin,
     },
     {
       name: "GitHub",
-      href: "https://github.com/your-profile",
+      href: "https://github.com/GreatHayat",
       icon: Github,
+    },
+    {
+      name: "Instagram",
+      href: "https://instagram.com/great_hayat",
+      icon: Instagram,
     },
   ];
 
@@ -68,14 +74,14 @@ const Footer: React.FC = () => {
                 </li>
               ))}
               <li>
-                <a
-                  href="https://cal.com/your-link"
+                <Link
+                  href="https://cal.com/muhammad-khizar-hayat/30min"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   Book a Call
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -107,7 +113,7 @@ const Footer: React.FC = () => {
         <div className="pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
-              © {currentYear} Awais. All rights reserved.
+              © {currentYear} Khizar Hayat. All rights reserved.
             </p>
             <p className="text-gray-500 text-xs">
               Built with NextJS, React & TailwindCSS

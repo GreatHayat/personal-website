@@ -1,9 +1,18 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import Link from "next/link";
+import { getCalApi } from "@calcom/embed-react";
 import { Calendar, Mail, ArrowRight } from "lucide-react";
 
 const FinalCTA: React.FC = () => {
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi({ namespace: "30min" });
+      cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
+    })();
+  }, []);
   return (
-    <section className="relative py-20 lg:py-28 bg-slate-950">
+    <section className="relative py-20 lg:py-28 bg-slate-950" id="contact">
       {/* Background decoration */}
       <div className="absolute inset-0">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full sm:w-[600px] h-[600px] bg-linear-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 rounded-full blur-3xl" />
@@ -54,24 +63,22 @@ const FinalCTA: React.FC = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
-          <a
-            href="https://cal.com/your-link"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 rounded-full text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50"
+          <button
+            data-cal-link="muhammad-khizar-hayat/30min"
+            className="text-white group inline-flex items-center justify-center gap-2 px-8 py-4 bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 rounded-full text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50"
           >
             <Calendar className="w-5 h-5" />
             Schedule a Free Call
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </a>
+          </button>
 
-          <a
-            href="mailto:your.email@example.com"
+          <Link
+            href="mailto:mkhizarfreelancer@gmail.com"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-linear-to-r from-slate-600 to-slate-700 hover:from-slate-500 hover:to-slate-600 border-2 border-white/30 hover:border-white/50 rounded-full text-lg font-semibold text-white transition-all duration-300 hover:scale-105"
           >
             <Mail className="w-5 h-5" />
             Or Email Me
-          </a>
+          </Link>
         </div>
 
         {/* Trust signals */}

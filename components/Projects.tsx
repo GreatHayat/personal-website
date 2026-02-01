@@ -151,13 +151,14 @@ const Projects: React.FC = () => {
                         key={idx}
                         className={`px-3 py-1 text-xs font-medium bg-linear-to-r ${project.linear} bg-opacity-10 border ${project.borderColor} rounded-full text-white`}
                       >
-                        {tech === "Supabase" ? (
+                        {tech}
+                        {/* {tech === "Supabase" ? (
                           <span className="font-bold bg-linear-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">
                             {tech}
                           </span>
                         ) : (
                           tech
-                        )}
+                        )} */}
                       </span>
                     ))}
                   </div>
@@ -168,7 +169,7 @@ const Projects: React.FC = () => {
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`inline-flex items-center gap-2 px-6 py-3 bg-linear-to-r ${project.linear} hover:opacity-90 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl`}
+                  className={`text-white inline-flex items-center gap-2 px-6 py-3 bg-linear-to-r ${project.linear} hover:opacity-90 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl`}
                 >
                   Visit Live Site
                   <ExternalLink className="w-4 h-4" />
@@ -180,18 +181,12 @@ const Projects: React.FC = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-20">
-          <p className="text-gray-400 mb-6 text-lg">
-            Want to build something similar for your business?
-          </p>
-          <a
-            href="https://cal.com/your-link"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/50"
+          <Link
+            href="/projects"
+            className="text-white inline-flex items-center gap-2 px-8 py-4 bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/50"
           >
-            Let&apos;s Discuss Your Project
-            <ExternalLink className="w-5 h-5" />
-          </a>
+            View All Projects
+          </Link>
         </div>
       </div>
     </section>

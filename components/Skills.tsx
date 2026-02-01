@@ -1,5 +1,6 @@
 import React from "react";
 import { Sparkles, Code, Workflow } from "lucide-react";
+import Link from "next/link";
 
 const Skills: React.FC = () => {
   const skillCategories = [
@@ -138,12 +139,13 @@ const Skills: React.FC = () => {
         <div className="text-center mt-12">
           <p className="text-gray-400 text-sm">
             Have a specific technology requirement?{" "}
-            <a
-              href="#about"
+            <Link
+              target="_blank"
+              href="https://cal.com/muhammad-khizar-hayat/30min"
               className="text-blue-400 hover:text-blue-300 transition-colors underline"
             >
               Let&apos;s discuss how I can help
-            </a>
+            </Link>
           </p>
         </div>
       </div>
