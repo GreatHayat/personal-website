@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Star, ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
+import Link from "next/link";
 
 const Testimonials: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -180,15 +181,15 @@ const Testimonials: React.FC = () => {
 
         {/* View All Reviews CTA */}
         <div className="text-center mt-12">
-          <a
-            href="https://www.upwork.com/freelancers/your-profile"
+          <Link
+            href="https://www.upwork.com/freelancers/~01e66b9a5da26e47be"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-linear-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-green-500/50"
           >
             Read All 30+ Reviews on Upwork
             <ExternalLink className="w-4 h-4" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>
