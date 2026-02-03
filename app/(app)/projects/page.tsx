@@ -320,8 +320,8 @@ const ProjectsPage: React.FC = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto">
             {[
               {
-                number: `${projects.length}+`,
-                label: "Projects Completed",
+                number: `10,000+`,
+                label: "Hours Worked",
                 gradient: "from-blue-500 to-cyan-500",
                 border: "border-blue-500/50",
                 shadow: "shadow-blue-500/20",
@@ -334,14 +334,14 @@ const ProjectsPage: React.FC = () => {
                 shadow: "shadow-cyan-500/20",
               },
               {
-                number: "100%",
+                number: "99%",
                 label: "Success Rate",
                 gradient: "from-teal-500 to-blue-500",
                 border: "border-teal-500/50",
                 shadow: "shadow-teal-500/20",
               },
               {
-                number: "5+",
+                number: "6+",
                 label: "Years Experience",
                 gradient: "from-green-500 to-emerald-500",
                 border: "border-green-500/50",

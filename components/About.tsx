@@ -88,7 +88,7 @@ const About: React.FC = () => {
               <p>
                 With over{" "}
                 <span className="text-white font-semibold">
-                  5 years of experience
+                  6+ years of experience
                 </span>{" "}
                 in software development, I&apos;ve had the privilege of working
                 directly with clients ranging from startups to established
@@ -113,7 +113,7 @@ const About: React.FC = () => {
               <p>
                 I specialize in modern, scalable technologies like{" "}
                 <span className="text-white font-semibold">
-                  NextJS, Supabase, and Node.js
+                  NextJS, Supabase, NestJS, NodeJS, GenerativeAI
                 </span>
                 , and I have deep expertise in payment integrations, cloud
                 infrastructure, and AI development. But more importantly, I
@@ -134,7 +134,7 @@ const About: React.FC = () => {
                 href="https://www.upwork.com/freelancers/~01e66b9a5da26e47be"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 bg-linear-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-green-500/50"
+                className="text-white px-6 py-3 bg-linear-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-green-500/50"
               >
                 Upwork Profile
               </Link>

@@ -53,8 +53,8 @@ const Hero: React.FC = () => {
           {/* Key Points */}
           <div className="flex flex-wrap justify-center gap-3 mb-10">
             {[
-              "5+ Years Experience",
-              "NextJS • Supabase • NodeJS",
+              "Ship in Weeks, Not Months",
+              "NextJS • Supabase • Stripe",
               "AI Voice • Workflow Automation",
             ].map((item, index) => (
               <div
@@ -92,7 +92,7 @@ const Hero: React.FC = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto">
             {[
               {
-                number: "5+",
+                number: "6+",
                 label: "Years of Experience",
                 gradient: "from-blue-500 to-cyan-500",
                 border: "border-blue-500/50",

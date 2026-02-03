@@ -14,8 +14,8 @@ const Footer: React.FC = () => {
 
   const socialLinks = [
     {
-      name: "Upwork",
-      href: "https://www.upwork.com/freelancers/~01e66b9a5da26e47be",
+      name: "Book Appointment",
+      href: "https://cal.com/muhammad-khizar-hayat/30min",
       icon: ExternalLink,
     },
     {
